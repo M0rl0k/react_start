@@ -1,0 +1,11 @@
+.card{
+    width: 18%;
+    margin: 0 1%;
+
+    box-sizing: border-box;
+    border: silver 1px solid;
+    border-radius: 5%;
+
+    text-align: center;
+}
+
