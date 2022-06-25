@@ -4,7 +4,7 @@ import User from "./User";
 
 export default function Users() {
     let [users, setUsers] = useState([]);
-    let [user, setUser] = useState([]);
+    let [user, setUser] = useState({});
 
     useEffect(()=>{
         fetch('https://jsonplaceholder.typicode.com/users')
@@ -28,7 +28,7 @@ export default function Users() {
             }
 
             {
-                user.username && <div>{user.username}{user.email}</div>
+                user.username && <div>USER DETAILS: {user.username}{user.email}</div>
             }
         </div>
 

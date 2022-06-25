@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
+.wrap{
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  width: 100%;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  background: beige;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.users{
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  padding: 10px;
+
+  text-align: center;
+
+  box-sizing: border-box;
+  border: 3px solid cornflowerblue;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user{
+  display: flex;
+  flex-direction: column;
+}
+
+.rockets{
+  width: 90%;
+
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  gap: 20px;
+
+  box-sizing: border-box;
+  border: 3px solid cornflowerblue;
+  border-radius: 10px;
+}
+
+.rocket{
+  width: 300px;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.rocket>img{
+  width: 200px;
+}
+
+h2{
+  width: 100%;
 }
