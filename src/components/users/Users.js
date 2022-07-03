@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import getUsers from "../../services/users.api.fetch/UsersFetch";
 import User from "../user/User";
 
-export default function Users() {
+export default function Users({elevate}) {
 
     let [users, setUsers] = useState([]);
 
@@ -17,6 +17,7 @@ export default function Users() {
             {users.map((user, index) => <User
                 key={index}
                 user={user}
+                elevate={elevate}
             />)
             }
     </div>
