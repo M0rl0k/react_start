@@ -1,16 +1,11 @@
 import React from 'react';
-import TodosApiService from "../services/todos.api.service";
-import {Outlet} from 'react-router-dom';
+import ToDosComponent from "../components/ToDos/ToDosComponent";
 
 const ToDosPage = () => {
     return (
         <div>
-            <TodosApiService/>
-
-            <Outlet/>
+            <ToDosComponent/>
         </div>
-
-
     );
 };
 
